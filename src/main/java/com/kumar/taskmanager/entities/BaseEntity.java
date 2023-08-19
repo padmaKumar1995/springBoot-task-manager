@@ -15,6 +15,6 @@ public abstract class BaseEntity {
     private Integer id;
 
     @CreatedDate
-    @Column(name = "created_at", nullable = false)
+    @Column(name = "created_at", nullable = true)
     private Date createdAt;
 }

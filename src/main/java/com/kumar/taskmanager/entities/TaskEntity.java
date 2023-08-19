@@ -1,11 +1,15 @@
 package com.kumar.taskmanager.entities;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 import java.util.List;
 
 @Entity(name = "tasks")
+@Getter
+@Setter
 public class TaskEntity extends BaseEntity {
     @Column(name = "title", nullable = false, length = 150)
     String title;
